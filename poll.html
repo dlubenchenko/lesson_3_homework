@@ -1,30 +1,50 @@
 <!DOCTYPE html>
-<html lang="en" style="margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline">
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Poll</title>
+	<meta charset="UTF-8">
+	<title>Homework 3 Form</title>
 </head>
 <body>
-	<form method="post" action="http://www.rupoll.com/vote.php">
-<input type="hidden" name="poll_id" value="zugwuorn">
-<table align=center width=240 border=1>
-	<tr>
-		<th align=center>Навіщо людині руки</td>
-	</tr>
-<tr><td>
-	<input type='radio' name='vote' value='1'> Здороватись
-</td></tr>
-<tr><td>
-<input type='radio' name='vote' value='2'> Аплодисменти</td></tr>
-<tr><td>
-<input type='radio' name='vote' value='3'> Дерти вуха</td></tr>
-<tr><td>
-<input type='radio' name='vote' value='4'> Щоб були</td></tr>
-<tr><td>
-<input type='radio' name='vote' value='5'> Ховати в кишені</td></tr>
-<tr><td align=center>
-<input type='submit' value='  Голосувати !  '></td></tr>
-<tr><td align=center>
-<a href="http://www.rupoll.com/zugwuornsr.html">Дивитись результат</a></tr></table></form>
+	<header>
+		<h1>This is poll</h1>
+	</header>
+	<section width="980">
+		<form method="POST" action="https://formspree.io/d.lubenchenko@gmail.com" >
+			<fieldset>
+				<legend><i>About yourself</i></legend> <!-- Особисті дані -->
+					<p> <!-- ПІБ -->
+						<label for="full_name">
+							<input type="text" name="full_name" placeholder="Full Name"> - Full Name</input>
+						</label>
+					</p>
+					<p> <!-- Номер телефону -->
+						<label for="phone">
+							<input type="text" name="phone" placeholder="Your phone number"> - Your phone number</input>
+						</label>
+					</p>
+					<p> <!-- Вік -->
+						<label for="age">
+							<input type="text" name="age" placeholder="Your age"> - Your age</input>
+						</label>
+					</p>
+					<p> <!-- Стать -->
+						<label for="sex">
+							<input type="text" name="sex" placeholder="Your sex"> - Your sex</input>
+						</label>
+					</p>
+					<p> <!-- Мова спілкування -->
+						<label for="lang">
+							<input type="text" name="lang" placeholder="Language"> - Language</input>
+						</label>
+					</p>
+					<p> <!-- Місцезнаходження -->
+						<label for="location">
+							<input type="text" name="location" placeholder="Your location"> - Your location</input>
+						</label>
+					</p>
+			</fieldset><hr>
+			<input type="submit" name="submit" value="Send">
+		</form>
+	</section>
 </body>
 </html>
