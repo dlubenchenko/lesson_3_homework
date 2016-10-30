@@ -24,20 +24,40 @@
 					</p>
 					<p> <!-- Номер телефону 380123456789 -->
 						<label for="phone">
-							<input type="text" name="phone" placeholder="Your phone number"> - Your phone number</input>
+							<select name="language">
+								<option value="blanck" selected></option> 
+								<option value="Ukrainian">039</option>
+								<option value="English">050</option>
+								<option value="German">063</option>
+								<option value="French">066</option>
+								<option value="Hindi">067</option>
+								<option value="Russian">068</option>
+								<option value="Arab">073</option>
+								<option value="blanck">091</option> 
+								<option value="Ukrainian">092</option>
+								<option value="English">093</option>
+								<option value="German">094</option>
+								<option value="French">095</option>
+								<option value="Hindi">096</option>
+								<option value="Hindi">097</option>
+								<option value="Russian">098</option>
+								<option value="Arab">099</option>
+								<option value="Arab">091</option>
+							</select> - 
+							<input type="tel" name="phone" placeholder="Your phone number"> - Your phone number</input>
 						</label>
 					</p>
 					<p> <!-- Вік /  -->
 						<label for="age">
-							<input type="text" name="age" placeholder="Your age"> - Your age</input>
+							<input type="range" name="age" placeholder="Your age"> - Your age</input>
 						</label>
 					</p>
 					<p> <!-- Стать  М / Ж випадаюче меню-->
-						<select name="sex">
-							<option value="blanck" selected></option> 
-							<option value="male">Male</option>
-							<option value="female">Female</option>
-						</select> - Your sex
+							<form name="male_female">
+								<input name="radiobutton" type="radio" value="male" checked="checked" >Male
+								<input name="radiobutton" type="radio" value="female">Female
+								 - Your sex
+							</form> 
 					</p>
 					<p> <!-- Мова спілкування випадаюче меню -->
 						<select name="language">
@@ -49,7 +69,7 @@
 							<option value="Hindi">Hindi</option>
 							<option value="Russian">Russian</option>
 							<option value="Arab">Arab</option>
-						</select> - Your language
+						</select> - Your language							<!-- виноска фрази за select -->
 					</p>
 					<p> <!-- Місцезнаходження випадаюче меню / області -->
 						<select name="location">
