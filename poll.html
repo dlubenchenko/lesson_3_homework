@@ -14,12 +14,12 @@
 				<legend><h2><i><u>About yourself</u></i></h2></legend> <!-- Особисті дані -->
 					<p> <!-- ПІБ -->
 						<label for="full_name">
-							<input type="text" name="full_name" placeholder="Enter Full Name" autofocus="autofocus" required size="30"><i> - Full Name</i></input>
+							<input id="full_name" type="text" name="full_name" placeholder="Enter Full Name" autofocus="autofocus" required size="30"><i> - Full Name</i>
 						</label>
 					</p>
 					<p> <!-- Email -->
 						<label for="email">
-							<input type="email" name="email" placeholder="example@example.com" required size="30"><i> - Your Email</i>
+							<input id="email" type="email" name="email" placeholder="example@example.com" required size="30"><i> - Your Email</i>
 						</label>
 					</p>
 					<p> <!-- Номер телефону 380123456789 -->							<!-- Якзробити обовєязковим -->
@@ -46,7 +46,7 @@
 						<input type="tel" name="phone" placeholder="1234567" pattern="[0-9]{7}" maxlength="7" required><i> - Your phone number</i>
 					</p>
 					<p> <!-- Вік  -->
-							<input type="range" value="21" name="age" size="30"> - Your age</i>
+							<input type="range" value="21" name="age" size="30"><i> - Your age</i>
 					</p>
 					<p> <!-- Стать  М / Ж випадаюче меню-->
 						<i>Your gender</i><br>
@@ -96,36 +96,36 @@
 						</select><i> - Your location</i>
 					</p>
 			</fieldset><hr>
-			<fieldset left>
+			<fieldset>
 				<legend><h2><i><u>What you need to be happy in the first place?</u></i></h2></legend>
-					<label for="">
+					<label for="happiness">
 						<input type="checkbox" name="happiness" value="interesting_job"><i> Interesting job </i><br>
 					</label>
-					<label for="">
+					<label for="happiness ">
 						<input type="checkbox" name="happiness" value="own_home"><i> Own home </i><br>
 					</label>
-					<label for="">
+					<label for="happiness ">
 						<input type="checkbox" name="happiness" value="money"><i> Money </i><br>
 					</label>
-					<label for="">
+					<label for="happiness ">
 						<input type="checkbox" name="happiness" value="family"><i> Family </i><br>
 					</label>
-					<label for="">
+					<label for="happiness ">
 						<input type="checkbox" name="happiness" value="love"><i> Love </i><br>
 					</label>
-					<label for="">
+					<label for="happiness ">
 						<input type="checkbox" name="happiness" value="freedom_independence"><i> Freedom, independence </i><br>
 					</label>
-					<label for="">
+					<label for="happiness ">
 						<input type="checkbox" name="happiness" value="clear_conscience"><i> Clear conscience </i><br>
 					</label>
-					<label for="">
-						<input type="checkbox" name="happiness" value="feeling_of_the_need_to"><i> Feeling of the need to </i><br>
+					<label for="happiness ">
+						<input id="happiness" type="checkbox" name="happiness" value="feeling_of_the_need_to"><i> Feeling of the need to </i><br>
 					</label>
-					<label for="">
+					<label for="happiness ">
 						<input type="checkbox" name="happiness" value="assurance_in_the_future"><i> Assurance in the future </i><br>
 					</label>
-					<label for="">
+					<label for="happiness ">
 						<input type="checkbox" name="happiness" value="difficult_to_answer"><i> Difficult to answer </i><br>
 					</label>
 			</fieldset><hr>
