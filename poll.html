@@ -11,20 +11,20 @@
 	<article width="980">
 		<form method="POST" action="https://formspree.io/d.lubenchenko@gmail.com" >
 			<fieldset>
-				<legend><i>About yourself</i></legend> <!-- Особисті дані -->
+				<legend><h2><i><u>About yourself</u></i></h2></legend> <!-- Особисті дані -->
 					<p> <!-- ПІБ -->
 						<label for="full_name">
-							<input type="text" name="full_name" placeholder="Full Name" autofocus="autofocus"> - Full Name</input>
+							<input type="text" name="full_name" placeholder="Enter Full Name" autofocus="autofocus" required size="30"><i> - Full Name</i></input>
 						</label>
 					</p>
 					<p> <!-- Email -->
 						<label for="email">
-							<input type="email" name="email" placeholder="Email"> - Your Email</input>
+							<input type="email" name="email" placeholder="example@example.com" required size="30"><i> - Your Email</i></input>
 						</label>
 					</p>
 					<p> <!-- Номер телефону 380123456789 -->
 						<label for="tel">
-							<select name="phone">
+							<select name="phone" required>
 								<option value="blanck" selected></option> 
 								<option value="039">039</option>
 								<option value="050">050</option>
@@ -44,100 +44,99 @@
 								<option value="099">099</option>
 								<option value="091">091</option>
 							</select> - 
-							<input type="tel" name="phone" placeholder="Your phone number" pattern="[0-9]{7}" maxlength="7"> - Your phone number</input>
+							<input type="tel" name="phone" placeholder="1234567" pattern="[0-9]{7}" maxlength="7" required><i> - Your phone number</i>
 						</label>
 					</p>
 					<p> <!-- Вік  -->
 						<label for="age">
-							<input type="range" name="age" placeholder="Your age"> - Your age</input>
+							<input type="range" value="21" name="age" placeholder="your age" required size="30"><i> - Your age</i>
 						</label>
 					</p>
 					<p> <!-- Стать  М / Ж випадаюче меню-->
-							<form name="male_female">
-								<input name="radiobutton" type="radio" value="male" checked="checked" >Male
-								<input name="radiobutton" type="radio" value="female">Female
-								 - Your sex
-							</form> 
+						<i>Your sex</i><br>
+						<input name="radiobutton" type="radio" value="male" checked="checked" >Male
+						<input name="radiobutton" type="radio" value="female">Female
 					</p>
 					<p> <!-- Мова спілкування випадаюче меню -->
-						<select name="language">
+						<select name="language" required>
 							<option value="blanck" selected></option> 
-							<option value="Ukrainian">Ukrainian</option>
-							<option value="English">English</option>
-							<option value="German">German</option>
-							<option value="French">French</option>
-							<option value="Hindi">Hindi</option>
-							<option value="Russian">Russian</option>
-							<option value="Arab">Arab</option>
-						</select> - Your language							<!-- виноска фрази за select -->
+							<option value="ukrainian">Ukrainian</option>
+							<option value="english">English</option>
+							<option value="german">German</option>
+							<option value="french">French</option>
+							<option value="hindi">Hindi</option>
+							<option value="russian">Russian</option>
+							<option value="arab">Arab</option>
+						</select><i> - Your language</i>							<!-- виноска фрази за select -->
 					</p>
 					<p> <!-- Місцезнаходження випадаюче меню / області -->
-						<select name="location">
+						<select name="location" required>
 							<option value="blanck" selected></option> 
-							<option value="Vinnytsia">Vinnytsia</option>
-							<option value="Volyn">Volyn</option>
-							<option value="Dnipropetrovsk">Dnipropetrovsk</option>
-							<option value="Donetsk">Donetsk</option>
-							<option value="Zhytomyr">Zhytomyr</option>
-							<option value="Zakarpattia">Zakarpattia</option>
-							<option value="Zaporizhia">Zaporizhia</option>
-							<option value="Ivano-Frankivsk">Ivano-Frankivsk</option> 
-							<option value="Kiev">Kiev</option>
-							<option value="Crimea">Crimea</option>
-							<option value="Kirovohrad">Kirovohrad</option>
-							<option value="Lugansk">Lugansk</option>
-							<option value="Lviv">Lviv</option>
-							<option value="Mykolaiv">Mykolaiv</option>
-							<option value="Odessa">Odessa</option>
-							<option value="Poltava">Poltava</option> 
-							<option value="Rivne">Rivne</option>
-							<option value="Sumy">Sumy</option>
-							<option value="Ternopil">Ternopil</option>
-							<option value="Kharkiv">Kharkiv</option>
-							<option value="Kherson">Kherson</option>
-							<option value="Khmelnitsky">Khmelnitsky</option>
-							<option value="Cherkasy">Cherkasy</option>
-							<option value="Chernihiv">Chernihiv</option>
-							<option value="Chernivtsi">Chernivtsi</option>
-						</select> - Your location
+							<option value="vinnytsia">Vinnytsia</option>
+							<option value="volyn">Volyn</option>
+							<option value="dnipropetrovsk">Dnipropetrovsk</option>
+							<option value="donetsk">Donetsk</option>
+							<option value="zhytomyr">Zhytomyr</option>
+							<option value="zakarpattia">Zakarpattia</option>
+							<option value="zaporizhia">Zaporizhia</option>
+							<option value="ivano-Frankivsk">Ivano-Frankivsk</option> 
+							<option value="kiev">Kiev</option>
+							<option value="crimea">Crimea</option>
+							<option value="kirovohrad">Kirovohrad</option>
+							<option value="lugansk">Lugansk</option>
+							<option value="lviv">Lviv</option>
+							<option value="mykolaiv">Mykolaiv</option>
+							<option value="odessa">Odessa</option>
+							<option value="poltava">Poltava</option> 
+							<option value="rivne">Rivne</option>
+							<option value="sumy">Sumy</option>
+							<option value="ternopil">Ternopil</option>
+							<option value="kharkiv">Kharkiv</option>
+							<option value="kherson">Kherson</option>
+							<option value="khmelnitsky">Khmelnitsky</option>
+							<option value="cherkasy">Cherkasy</option>
+							<option value="chernihiv">Chernihiv</option>
+							<option value="chernivtsi">Chernivtsi</option>
+						</select><i> - Your location</i>
 					</p>
 			</fieldset><hr>
 			<fieldset left>
-				<legend><i>What you need to be happy in the first place?</i></legend>
+				<legend><h2><i><u>What you need to be happy in the first place?</u></i></h2></legend>
 					<label for="">
-						<input type="checkbox" name="happiness" value="Interesting job"> Interesting job <br>
+						<input type="checkbox" name="happiness" value="interesting_job"><i> Interesting job </i><br>
 					</label>
 					<label for="">
-						<input type="checkbox" name="happiness" value="Own home"> Own home <br>
+						<input type="checkbox" name="happiness" value="own_home"><i> Own home </i><br>
 					</label>
 					<label for="">
-						<input type="checkbox" name="happiness" value="Money"> Money <br>
+						<input type="checkbox" name="happiness" value="money"><i> Money </i><br>
 					</label>
 					<label for="">
-						<input type="checkbox" name="happiness" value="Family"> Family <br>
+						<input type="checkbox" name="happiness" value="family"><i> Family </i><br>
 					</label>
 					<label for="">
-						<input type="checkbox" name="happiness" value="Love"> Love <br>
+						<input type="checkbox" name="happiness" value="love"><i> Love </i><br>
 					</label>
 					<label for="">
-						<input type="checkbox" name="happiness" value="Freedom, independence"> Freedom, independence <br>
+						<input type="checkbox" name="happiness" value="freedom_independence"><i> Freedom, independence </i><br>
 					</label>
 					<label for="">
-						<input type="checkbox" name="happiness" value="Clear conscience"> Clear conscience <br>
+						<input type="checkbox" name="happiness" value="clear_conscience"><i> Clear conscience </i><br>
 					</label>
 					<label for="">
-						<input type="checkbox" name="happiness" value="Feeling of the need to"> Feeling of the need to <br>
+						<input type="checkbox" name="happiness" value="feeling_of_the_need_to"><i> Feeling of the need to </i><br>
 					</label>
 					<label for="">
-						<input type="checkbox" name="happiness" value="Assurance in the future"> Assurance in the future <br>
+						<input type="checkbox" name="happiness" value="assurance_in_the_future"><i> Assurance in the future </i><br>
 					</label>
 					<label for="">
-						<input type="checkbox" name="happiness" value="Difficult to answer"> Difficult to answer <br>
+						<input type="checkbox" name="happiness" value="difficult_to_answer"><i> Difficult to answer </i><br>
 					</label>
 			</fieldset><hr>
 
 			<input type="reset" name="reset" value="reset"> 
 			<input type="submit" name="submit" value="send">
+
 		</form>
 	</article>
 </body>
