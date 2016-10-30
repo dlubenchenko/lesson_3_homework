@@ -22,30 +22,64 @@
 							<input type="email" name="email" placeholder="Email"> - Your Email</input>
 						</label>
 					</p>
-					<p> <!-- Номер телефону -->
+					<p> <!-- Номер телефону 380123456789 -->
 						<label for="phone">
 							<input type="text" name="phone" placeholder="Your phone number"> - Your phone number</input>
 						</label>
 					</p>
-					<p> <!-- Вік -->
+					<p> <!-- Вік /  -->
 						<label for="age">
 							<input type="text" name="age" placeholder="Your age"> - Your age</input>
 						</label>
 					</p>
-					<p> <!-- Стать -->
-						<label for="sex">
-							<input type="text" name="sex" placeholder="Your sex"> - Your sex</input>
-						</label>
+					<p> <!-- Стать  М / Ж випадаюче меню-->
+						<select name="sex">
+							<option value="blanck" selected></option> 
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+						</select> - Your sex
 					</p>
-					<p> <!-- Мова спілкування -->
-						<label for="lang">
-							<input type="text" name="lang" placeholder="Language"> - Language</input>
-						</label>
+					<p> <!-- Мова спілкування випадаюче меню -->
+						<select name="language">
+							<option value="blanck" selected></option> 
+							<option value="Ukrainian">Ukrainian</option>
+							<option value="English">English</option>
+							<option value="German">German</option>
+							<option value="French">French</option>
+							<option value="Hindi">Hindi</option>
+							<option value="Russian">Russian</option>
+							<option value="Arab">Arab</option>
+						</select> - Your language
 					</p>
-					<p> <!-- Місцезнаходження -->
-						<label for="location">
-							<input type="text" name="location" placeholder="Your location"> - Your location</input>
-						</label>
+					<p> <!-- Місцезнаходження випадаюче меню / області -->
+						<select name="location">
+							<option value="blanck" selected></option> 
+							<option value="Vinnytsia">Vinnytsia</option>
+							<option value="Volyn">Volyn</option>
+							<option value="Dnipropetrovsk">Dnipropetrovsk</option>
+							<option value="Donetsk">Donetsk</option>
+							<option value="Zhytomyr">Zhytomyr</option>
+							<option value="Zakarpattia">Zakarpattia</option>
+							<option value="Zaporizhia">Zaporizhia</option>
+							<option value="Ivano-Frankivsk">Ivano-Frankivsk</option> 
+							<option value="Kiev">Kiev</option>
+							<option value="Crimea">Crimea</option>
+							<option value="Kirovohrad">Kirovohrad</option>
+							<option value="Lugansk">Lugansk</option>
+							<option value="Lviv">Lviv</option>
+							<option value="Mykolaiv">Mykolaiv</option>
+							<option value="Odessa">Odessa</option>
+							<option value="Poltava">Poltava</option> 
+							<option value="Rivne">Rivne</option>
+							<option value="Sumy">Sumy</option>
+							<option value="Ternopil">Ternopil</option>
+							<option value="Kharkiv">Kharkiv</option>
+							<option value="Kherson">Kherson</option>
+							<option value="Khmelnitsky">Khmelnitsky</option>
+							<option value="Cherkasy">Cherkasy</option>
+							<option value="Chernihiv">Chernihiv</option>
+							<option value="Chernivtsi">Chernivtsi</option>
+						</select> - Your location
 					</p>
 			</fieldset><hr>
 			<fieldset left>
@@ -80,7 +114,8 @@
 					<label for="">
 						<input type="checkbox" name="happiness" value="Difficult to answer"> Difficult to answer <br>
 					</label>
-			</fieldset><br>
+			</fieldset><hr>
+
 			<input type="reset" name="reset" value="reset"> 
 			<input type="submit" name="submit" value="send">
 		</form>
