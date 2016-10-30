@@ -49,13 +49,14 @@
 					</p>
 					<p> <!-- Вік  -->
 						<label for="age">
-							<input type="range" value="21" name="age" placeholder="your age" required size="30"><i> - Your age</i>
+							<input type="range" value="21" name="age" placeholder="your age" required size="30">
+							<output for="age" name="age"></output><i> - Your age</i>
 						</label>
 					</p>
 					<p> <!-- Стать  М / Ж випадаюче меню-->
-						<i>Your sex</i><br>
-						<input name="radiobutton" type="radio" value="male" checked="checked" >Male
-						<input name="radiobutton" type="radio" value="female">Female
+						<i>Your gender</i><br>
+						<input name="gender" type="radio" value="male" checked="checked"> Male
+						<input name="gender" type="radio" value="female"> Female
 					</p>
 					<p> <!-- Мова спілкування випадаюче меню -->
 						<select name="language" required>
@@ -133,10 +134,10 @@
 						<input type="checkbox" name="happiness" value="difficult_to_answer"><i> Difficult to answer </i><br>
 					</label>
 			</fieldset><hr>
-
+			<button onclick="window.location.href='/page2'">Back</button>
 			<input type="reset" name="reset" value="reset"> 
 			<input type="submit" name="submit" value="send">
-
+			
 		</form>
 	</article>
 </body>
