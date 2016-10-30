@@ -8,7 +8,7 @@
 	<header>
 		<h1>This is poll</h1>
 	</header>
-	<article width="980">
+	<article>
 		<form method="POST" action="https://formspree.io/d.lubenchenko@gmail.com" >
 			<fieldset>
 				<legend><h2><i><u>About yourself</u></i></h2></legend> <!-- Особисті дані -->
@@ -19,11 +19,10 @@
 					</p>
 					<p> <!-- Email -->
 						<label for="email">
-							<input type="email" name="email" placeholder="example@example.com" required size="30"><i> - Your Email</i></input>
+							<input type="email" name="email" placeholder="example@example.com" required size="30"><i> - Your Email</i>
 						</label>
 					</p>
-					<p> <!-- Номер телефону 380123456789 -->
-						<label for="tel" required>
+					<p> <!-- Номер телефону 380123456789 -->							<!-- Якзробити обовєязковим -->
 							<select name="phone">
 								<option value="blank" selected></option> 
 								<option value="039">039</option>
@@ -44,14 +43,10 @@
 								<option value="099">099</option>
 								<option value="091">091</option>
 							</select> - 
-							<input type="tel" name="phone" placeholder="1234567" pattern="[0-9]{7}" maxlength="7" required><i> - Your phone number</i>
-						</label>
+						<input type="tel" name="phone" placeholder="1234567" pattern="[0-9]{7}" maxlength="7" required><i> - Your phone number</i>
 					</p>
 					<p> <!-- Вік  -->
-						<label for="age">
-							<input type="range" value="21" name="age" placeholder="your age" required size="30">
-							<output for="age" name="age"></output><i> - Your age</i>
-						</label>
+							<input type="range" value="21" name="age" size="30"> - Your age</i>
 					</p>
 					<p> <!-- Стать  М / Ж випадаюче меню-->
 						<i>Your gender</i><br>
@@ -137,11 +132,9 @@
 			<input type="reset" name="reset" value="Reset"> 
 			<input type="submit" name="submit" value="Send"><br>
 		</form><br>
-		<center>
-			<form action="index.html">
-				<input type="submit" value="Back to table">
-			</form>
-		</center>
+		<form action="https://dlubenchenko.github.io/lesson_3_homework/index.html">
+			<input type="submit" value="Back">
+		</form> 
 	</article>
 </body>
 </html>
