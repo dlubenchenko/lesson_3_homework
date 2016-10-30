@@ -1,146 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Homework 3 Form</title>
-</head>
-<body>
-	<header>
-		<h1>This is poll</h1>
-	</header>
-	<article>
-		<form method="POST" action="https://formspree.io/d.lubenchenko@gmail.com" >
-			<fieldset>
-				<legend><h2><i><u>About yourself</u></i></h2></legend> <!-- Особисті дані -->
-					<p> <!-- ПІБ -->
-						<label for="full_name">
-							<input id="full_name" type="text" name="full_name" placeholder="Enter Full Name" autofocus="autofocus" size="30" required><i> - Full Name</i>
-						</label>
-					</p>
-					<p> <!-- Email -->
-						<label for="email">
-							<input id="email" type="email" name="email" placeholder="example@example.com" required size="30"><i> - Your Email</i>
-						</label>
-					</p>
-					<p> <!-- Номер телефону 380123456789 -->							<!-- Якзробити обовєязковим -->
-							<select name="phone">
-								<option value="blank" selected> </option> 
-								<option value="039">039</option>
-								<option value="050">050</option>
-								<option value="063">063</option>
-								<option value="066">066</option>
-								<option value="067">067</option>
-								<option value="068">068</option>
-								<option value="073">073</option>
-								<option value="091">091</option> 
-								<option value="092">092</option>
-								<option value="093">093</option>
-								<option value="094">094</option>
-								<option value="095">095</option>
-								<option value="096">096</option>
-								<option value="097">097</option>
-								<option value="098">098</option>
-								<option value="099">099</option>
-								<option value="091">091</option>
-							</select> - 
-						<input type="tel" name="phone" placeholder="1234567" pattern="[0-9]{7}" maxlength="7" required><i> - Your phone number</i>
-					</p>
-					<p> <!-- Вік  -->
-							<input type="range" value="21" name="age" size="30"><i> - Your age</i>
-					</p>
-					<p> <!-- Стать  М / Ж випадаюче меню-->
-						<i>Your gender</i><br>
-						<input name="gender" type="radio" value="male"> Male
-						<input name="gender" type="radio" value="female"> Female
-					</p>
-					<p> <!-- Мова спілкування випадаюче меню -->
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	    <link rel="icon" href="style/favicon.ico" type="image/x-icon">
+		<title>Homework 3 Form</title>
+	</head>
+	<body>
+		<header>
+			<h1>This is poll</h1>
+		</header>
+		<article>
+			<form method="POST" action="https://formspree.io/d.lubenchenko@gmail.com" >
+				<fieldset>
+					<legend><h2><i><u>About yourself</u></i></h2></legend> <!-- Особисті дані -->
+						<p> <!-- ПІБ -->
+							<label for="full_name">
+								<input id="full_name" type="text" name="full_name" placeholder="Enter Full Name" autofocus="autofocus" size="30" required><i> - Full Name</i>
+							</label>
+						</p>
+						<p> <!-- Email -->
+							<label for="email">
+								<input id="email" type="email" name="email" placeholder="example@example.com" required size="30"><i> - Your Email</i>
+							</label>
+						</p>
+						<p> <!-- Номер телефону 380123456789 -->							<!-- Якзробити обовєязковим -->
+								<select name="phone">
+									<option value="blank" selected> </option> 
+									<option value="039">039</option>
+									<option value="050">050</option>
+									<option value="063">063</option>
+									<option value="066">066</option>
+									<option value="067">067</option>
+									<option value="068">068</option>
+									<option value="073">073</option>
+									<option value="091">091</option> 
+									<option value="092">092</option>
+									<option value="093">093</option>
+									<option value="094">094</option>
+									<option value="095">095</option>
+									<option value="096">096</option>
+									<option value="097">097</option>
+									<option value="098">098</option>
+									<option value="099">099</option>
+									<option value="091">091</option>
+								</select> - 
+							<input type="tel" name="phone" placeholder="1234567" pattern="[0-9]{7}" maxlength="7" required><i> - Your phone number</i>
+						</p>
+						<p> <!-- Вік  -->
+								<input type="range" value="21" name="age" size="30"><i> - Your age</i>
+						</p>
+						<p> <!-- Стать  М / Ж випадаюче меню-->
+							<i>Your gender</i><br>
+							<input name="gender" type="radio" value="male"> Male
+							<input name="gender" type="radio" value="female"> Female
+						</p>
+						<p> <!-- Мова спілкування випадаюче меню -->
+							<label>
+								<select name="language" required>
+									<option value="blank" selected> </option> 
+									<option value="ukrainian">Ukrainian</option>
+									<option value="english">English</option>
+									<option value="german">German</option>
+									<option value="french">French</option>
+									<option value="hindi">Hindi</option>
+									<option value="russian">Russian</option>
+									<option value="arab">Arab</option>
+								</select><i> - Your language</i>							<!-- виноска фрази за select -->
+							</label>
+						</p>
+						<p> <!-- Місцезнаходження випадаюче меню / області -->
+							<select name="location" required>
+								<option value="blank" selected></option> 
+								<option value="vinnytsia">Vinnytsia</option>
+								<option value="volyn">Volyn</option>
+								<option value="dnipropetrovsk">Dnipropetrovsk</option>
+								<option value="donetsk">Donetsk</option>
+								<option value="zhytomyr">Zhytomyr</option>
+								<option value="zakarpattia">Zakarpattia</option>
+								<option value="zaporizhia">Zaporizhia</option>
+								<option value="ivano-Frankivsk">Ivano-Frankivsk</option> 
+								<option value="kiev">Kiev</option>
+								<option value="crimea">Crimea</option>
+								<option value="kirovohrad">Kirovohrad</option>
+								<option value="lugansk">Lugansk</option>
+								<option value="lviv">Lviv</option>
+								<option value="mykolaiv">Mykolaiv</option>
+								<option value="odessa">Odessa</option>
+								<option value="poltava">Poltava</option> 
+								<option value="rivne">Rivne</option>
+								<option value="sumy">Sumy</option>
+								<option value="ternopil">Ternopil</option>
+								<option value="kharkiv">Kharkiv</option>
+								<option value="kherson">Kherson</option>
+								<option value="khmelnitsky">Khmelnitsky</option>
+								<option value="cherkasy">Cherkasy</option>
+								<option value="chernihiv">Chernihiv</option>
+								<option value="chernivtsi">Chernivtsi</option>
+							</select><i> - Your location</i>
+						</p>
+				</fieldset><hr>
+				<fieldset>
+					<legend><h2><i><u>What you need to be happy?</u></i></h2></legend>
 						<label>
-							<select name="language" required>
-								<option value="blank" selected> </option> 
-								<option value="ukrainian">Ukrainian</option>
-								<option value="english">English</option>
-								<option value="german">German</option>
-								<option value="french">French</option>
-								<option value="hindi">Hindi</option>
-								<option value="russian">Russian</option>
-								<option value="arab">Arab</option>
-							</select><i> - Your language</i>							<!-- виноска фрази за select -->
+							<input type="checkbox" name="happiness" value="interesting_job"><i> Interesting job </i><br>
 						</label>
-					</p>
-					<p> <!-- Місцезнаходження випадаюче меню / області -->
-						<select name="location" required>
-							<option value="blank" selected></option> 
-							<option value="vinnytsia">Vinnytsia</option>
-							<option value="volyn">Volyn</option>
-							<option value="dnipropetrovsk">Dnipropetrovsk</option>
-							<option value="donetsk">Donetsk</option>
-							<option value="zhytomyr">Zhytomyr</option>
-							<option value="zakarpattia">Zakarpattia</option>
-							<option value="zaporizhia">Zaporizhia</option>
-							<option value="ivano-Frankivsk">Ivano-Frankivsk</option> 
-							<option value="kiev">Kiev</option>
-							<option value="crimea">Crimea</option>
-							<option value="kirovohrad">Kirovohrad</option>
-							<option value="lugansk">Lugansk</option>
-							<option value="lviv">Lviv</option>
-							<option value="mykolaiv">Mykolaiv</option>
-							<option value="odessa">Odessa</option>
-							<option value="poltava">Poltava</option> 
-							<option value="rivne">Rivne</option>
-							<option value="sumy">Sumy</option>
-							<option value="ternopil">Ternopil</option>
-							<option value="kharkiv">Kharkiv</option>
-							<option value="kherson">Kherson</option>
-							<option value="khmelnitsky">Khmelnitsky</option>
-							<option value="cherkasy">Cherkasy</option>
-							<option value="chernihiv">Chernihiv</option>
-							<option value="chernivtsi">Chernivtsi</option>
-						</select><i> - Your location</i>
-					</p>
-			</fieldset><hr>
-			<fieldset>
-				<legend><h2><i><u>What you need to be happy?</u></i></h2></legend>
-					<label>
-						<input type="checkbox" name="happiness" value="interesting_job"><i> Interesting job </i><br>
-					</label>
-					<label>
-						<input type="checkbox" name="happiness" value="own_home"><i> Own home </i><br>
-					</label>
-					<label>
-						<input type="checkbox" name="happiness" value="money"><i> Money </i><br>
-					</label>
-					<label>
-						<input type="checkbox" name="happiness" value="family"><i> Family </i><br>
-					</label>
-					<label>
-						<input type="checkbox" name="happiness" value="love"><i> Love </i><br>
-					</label>
-					<label>
-						<input type="checkbox" name="happiness" value="freedom_independence"><i> Freedom, independence </i><br>
-					</label>
-					<label>
-						<input type="checkbox" name="happiness" value="clear_conscience"><i> Clear conscience </i><br>
-					</label>
-					<label>
-						<input type="checkbox" name="happiness" value="feeling_of_the_need_to"><i> Feeling of the need to </i><br>
-					</label>
-					<label>
-						<input type="checkbox" name="happiness" value="assurance_in_the_future"><i> Assurance in the future </i><br>
-					</label>
-					<label>
-						<input type="checkbox" name="happiness" value="difficult_to_answer"><i> Difficult to answer </i><br>
-					</label>
-			</fieldset><hr>
-			<center>
+						<label>
+							<input type="checkbox" name="happiness" value="own_home"><i> Own home </i><br>
+						</label>
+						<label>
+							<input type="checkbox" name="happiness" value="money"><i> Money </i><br>
+						</label>
+						<label>
+							<input type="checkbox" name="happiness" value="family"><i> Family </i><br>
+						</label>
+						<label>
+							<input type="checkbox" name="happiness" value="love"><i> Love </i><br>
+						</label>
+						<label>
+							<input type="checkbox" name="happiness" value="freedom_independence"><i> Freedom, independence </i><br>
+						</label>
+						<label>
+							<input type="checkbox" name="happiness" value="clear_conscience"><i> Clear conscience </i><br>
+						</label>
+						<label>
+							<input type="checkbox" name="happiness" value="feeling_of_the_need_to"><i> Feeling of the need to </i><br>
+						</label>
+						<label>
+							<input type="checkbox" name="happiness" value="assurance_in_the_future"><i> Assurance in the future </i><br>
+						</label>
+						<label>
+							<input type="checkbox" name="happiness" value="difficult_to_answer"><i> Difficult to answer </i><br>
+						</label>
+				</fieldset><hr>
 				<input type="reset" name="reset" value="reset"> 
 				<input type="submit" name="submit" value="send"><br>
+			</form><br>
+			<center>
+				<form action="https://dlubenchenko.github.io/lesson_3_homework/index.html">
+					<input type="submit" value="back to table">
+				</form>
 			</center>
-		</form><br>
-		<center>
-			<form action="https://dlubenchenko.github.io/lesson_3_homework/index.html">
-				<input type="submit" value="back to table">
-			</form>
-		</center>
-	</article>
-</body>
+		</article>
+	</body>
 </html>
