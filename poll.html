@@ -4,52 +4,86 @@
 	<meta charset="UTF-8">
 	<title>Homework 3 Form</title>
 </head>
-	<body>
-		<header>
-			<h1>This is poll</h1>
-		</header>
-		<section width="980">
-			<form method="POST" action="https://formspree.io/d.lubenchenko@gmail.com" >
-				<fieldset>
-					<legend><i>About yourself</i></legend> <!-- Особисті дані -->
-						<p> <!-- ПІБ -->
-							<label for="full_name">
-								<input type="text" name="full_name" placeholder="Full Name"> - Full Name</input>
-							</label>
-						</p>
-						<p> <!-- Email -->
-							<label for="email">
-								<input type="email" name="email" placeholder="Email"> - Your Email</input>
-							</label>
-						</p>
-						<p> <!-- Номер телефону -->
-							<label for="phone">
-								<input type="text" name="phone" placeholder="Your phone number"> - Your phone number</input>
-							</label>
-						</p>
-						<p> <!-- Вік -->
-							<label for="age">
-								<input type="text" name="age" placeholder="Your age"> - Your age</input>
-							</label>
-						</p>
-						<p> <!-- Стать -->
-							<label for="sex">
-								<input type="text" name="sex" placeholder="Your sex"> - Your sex</input>
-							</label>
-						</p>
-						<p> <!-- Мова спілкування -->
-							<label for="lang">
-								<input type="text" name="lang" placeholder="Language"> - Language</input>
-							</label>
-						</p>
-						<p> <!-- Місцезнаходження -->
-							<label for="location">
-								<input type="text" name="location" placeholder="Your location"> - Your location</input>
-							</label>
-						</p>
-				</fieldset><hr>
-				<input type="submit" name="submit" value="Send">
-			</form>
-		</section>
-	</body>
+<body>
+	<header>
+		<h1>This is poll</h1>
+	</header>
+	<article width="980">
+		<form method="POST" action="https://formspree.io/d.lubenchenko@gmail.com" >
+			<fieldset>
+				<legend><i>About yourself</i></legend> <!-- Особисті дані -->
+					<p> <!-- ПІБ -->
+						<label for="full_name">
+							<input type="text" name="full_name" placeholder="Full Name"> - Full Name</input>
+						</label>
+					</p>
+					<p> <!-- Email -->
+						<label for="email">
+							<input type="email" name="email" placeholder="Email"> - Your Email</input>
+						</label>
+					</p>
+					<p> <!-- Номер телефону -->
+						<label for="phone">
+							<input type="text" name="phone" placeholder="Your phone number"> - Your phone number</input>
+						</label>
+					</p>
+					<p> <!-- Вік -->
+						<label for="age">
+							<input type="text" name="age" placeholder="Your age"> - Your age</input>
+						</label>
+					</p>
+					<p> <!-- Стать -->
+						<label for="sex">
+							<input type="text" name="sex" placeholder="Your sex"> - Your sex</input>
+						</label>
+					</p>
+					<p> <!-- Мова спілкування -->
+						<label for="lang">
+							<input type="text" name="lang" placeholder="Language"> - Language</input>
+						</label>
+					</p>
+					<p> <!-- Місцезнаходження -->
+						<label for="location">
+							<input type="text" name="location" placeholder="Your location"> - Your location</input>
+						</label>
+					</p>
+			</fieldset><hr>
+			<fieldset left>
+				<legend><i>What you need to be happy in the first place?</i></legend>
+					<label for="">
+						<input type="checkbox" name="happiness" value=""> Interesting job <br>
+					</label>
+					<label for="">
+						<input type="checkbox" name="happiness" value=""> Own home <br>
+					</label>
+					<label for="">
+						<input type="checkbox" name="happiness" value=""> Money <br>
+					</label>
+					<label for="">
+						<input type="checkbox" name="happiness" value=""> Family <br>
+					</label>
+					<label for="">
+						<input type="checkbox" name="happiness" value=""> Love <br>
+					</label>
+					<label for="">
+						<input type="checkbox" name="happiness" value=""> Freedom, independence <br>
+					</label>
+					<label for="">
+						<input type="checkbox" name="happiness" value=""> Clear conscience <br>
+					</label>
+					<label for="">
+						<input type="checkbox" name="happiness" value=""> Feeling of the need to <br>
+					</label>
+					<label for="">
+						<input type="checkbox" name="happiness" value=""> Assurance in the future <br>
+					</label>
+					<label for="">
+						<input type="checkbox" name="happiness" value=""> Difficult to answer <br>
+					</label>
+			</fieldset><br>
+			<input type="reset" name="reset" value="reset"> 
+			<input type="submit" name="submit" value="send">
+		</form>
+	</article>
+</body>
 </html>
