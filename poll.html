@@ -48,7 +48,7 @@
 							<input type="tel" name="phone" placeholder="1234567" pattern="[0-9]{7}" maxlength="7" required><i> Your phone number</i>
 						</p>
 						<p> <!-- Вік  -->
-								<input type="range" value="21" name="age"><i> Your age</i>
+								<input type="range" value="21" name="age"><i> Your age</i>		<!-- Як винести окремим значенням для всіх браузерів -->
 						</p>
 						<p> <!-- Стать  М / Ж випадаюче меню-->
 							<fieldset>
@@ -102,8 +102,8 @@
 							</select><i> Your location</i>
 						</p>
 				</fieldset>
-				<fieldset>
-					<legend><h2><i><u>What you need to be happy?</u></i></h2></legend> <!-- Опитувальник / checkbox -->
+				<fieldset> <!-- Опитувальник / checkbox -->
+					<legend><h2><i><u>What you need to be happy?</u></i></h2></legend>
 						<label>
 							<input type="checkbox" name="happiness" value="interesting_job"><i> Interesting job </i><br>
 						</label>
